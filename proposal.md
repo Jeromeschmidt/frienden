@@ -1,0 +1,1 @@
+I plan on making a tinder for roommates. With good roommates being so hard to find, it allows people looking for roommates to see other peoples profiles that include pictures of themselves and the places they have avalible, target price range, and a brief bio. This could prove as a more reliable solution to roommate finding than sites such as craigslist.
