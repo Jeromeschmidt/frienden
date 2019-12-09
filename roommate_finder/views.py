@@ -27,9 +27,9 @@ class PersonDetailView(DetailView):
 
     def get(self, request, slug):
         """ Returns a specific wiki page by slug. """
-        people = self.get_queryset().get(slug__iexact=slug)
+        person = self.get_queryset().get(slug__iexact=slug)
         return render(request, 'person.html', {
-          'people': people
+          'person': person
         })
 
 class PersonCreate(CreateView):
