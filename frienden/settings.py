@@ -25,7 +25,7 @@ SECRET_KEY = 'yo$niztpgd+zv4wvq1-5nucr9x1m*!*ide+)3+25abpao2m@yy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '167.71.172.22']
+ALLOWED_HOSTS = ['localhost', '167.71.172.22', 'frienden.herokuapp.com']
 
 
 # Application definition
@@ -130,7 +130,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
  os.path.join(BASE_DIR, "static"),
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # wiki app settings
 WIKI_PAGE_TITLE_MAX_LENGTH = 600
