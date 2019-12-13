@@ -1,7 +1,7 @@
 # Frienden
 
 ## [Live Website](http://167.71.172.22:8000/)
-# Deployed live on Digital Ocean
+#### Deployed live on Digital Ocean
 
 ## 🚀 Getting Started
 
