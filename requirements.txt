@@ -1,5 +1,5 @@
 asgiref==3.2.3
-django==2.2.7
+django>=2.2.8
 gunicorn
 djangorestframework==3.10.3
 pytz==2019.3
