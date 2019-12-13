@@ -37,9 +37,7 @@ Once you have everything installed, you need to rename `.env.example` to `.env` 
 
 ```bash
 # cd into the src folder
-cd make_resources
-# rename .env.example to .env
-mv .env.example .env
+cd frienden
 # populate the .env file with correct data
 vim .env
 ```
