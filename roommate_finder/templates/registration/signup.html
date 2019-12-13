@@ -18,7 +18,18 @@
                     </div>
                 </div>
             {% endfor %}
-            <button type="submit" class="btn btn-success">Sign up</button>
+            Subscription amount: $14.99 (Hint: Use card number: 4242 4242 4242 4242 with 12/20 and 999)
+            <br>
+            <form action="/create_subscription.php" method="POST" type="submit" class="btn btn-success">
+                <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+                    data-name="Roommate and tenant finder"
+                    data-description="Roommate and tenant finder"
+                    data-amount="1499"
+                    data-label="Sign Up">
+                </script>
+            </form>
           </form>
         </div>
       </div>
