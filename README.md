@@ -1,6 +1,7 @@
 # Frienden
 
 ## [Live Website](http://167.71.172.22:8000/)
+#Deployed live on Digital Ocean
 
 ## 🚀 Getting Started
 
@@ -78,3 +79,5 @@ http://localhost:8000
 - [Django](https://www.djangoproject.com/) - For pretty much everything
 - [python-dotenv](https://pypi.org/project/python-dotenv/) - To keep secrets secret
 - [djangorestframework](https://www.django-rest-framework.org/) - For the API
+
+Credit: https://github.com/tempor1s for the README format
