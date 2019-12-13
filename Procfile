@@ -1,1 +1,1 @@
-web: gunicorn frienden.wsgi --log-file -
+web: gunicorn frienden.wsgi —-log-file -
