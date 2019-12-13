@@ -1,7 +1,8 @@
 # Frienden
 
-## [Live Website](http://167.71.172.22:8000/)
-#### Deployed live on Digital Ocean
+## [DigitalOcean Host](http://167.71.172.22:8000/)
+## [Heroku Host](https://frienden.herokuapp.com/)
+#### ****DigitalOcean website doesn't function correctly all of the time, Heroku deployment serves as backup website
 
 ## 🚀 Getting Started
 
