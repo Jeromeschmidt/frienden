@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'yo$niztpgd+zv4wvq1-5nucr9x1m*!*ide+)3+25abpao2m@yy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '167.71.172.22', 'frienden.herokuapp.com']
 
