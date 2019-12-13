@@ -1,12 +1,28 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h3>Frienden {% if people %}<small class="text-muted">({{ people|length }} Person{{ people|length|pluralize:"s" }})</small>{% endif %}</h3>
+  <h3>roommate_finder </h3>
+  <hr>
+  {% if people %}
+    <div class="card-columns">
+    {% for person in people %}
+      {% if person.Have_room_available == "F" %}
+          {% include "partials/card.html" %}
+      {% endif %}
+    {% endfor %}
+    </div>
+  {% else %}
+    <div class="alert alert-primary" role="alert">No people to display.</div>
+  {% endif %}
+  <br>
+  <h3>room_finder {% if people %}{% endif %}</h3>
   <hr>
   {% if people %}
     <div class="card-columns">
       {% for person in people %}
-        {% include "partials/card.html" %}
+          {% if person.Have_room_available == "T" %}
+              {% include "partials/card.html" %}
+          {% endif %}
       {% endfor %}
     </div>
   {% else %}

@@ -16,6 +16,9 @@ class PersonListView(ListView):
 
     def get(self, request):
         """ GET a list of Pages. """
+        # min_rent = Person.objects.get(model.first_name = request.user.username)
+        # print(min_rent)
+        # max_rent = None
         people = self.get_queryset().all().order_by('-pub_date')
         return render(request, 'list.html', {
           'people': people
@@ -34,5 +37,5 @@ class PersonDetailView(DetailView):
 
 class PersonCreate(CreateView):
     model = Person
-    fields = ['first_name', 'last_name', 'Bio', 'Have_room_available', 'min_rent', 'max_rent', 'pub_date']
+    fields = ['first_name', 'last_name', 'Bio', 'Have_room_available', 'min_rent', 'max_rent', 'contact_info', 'pub_date']
     template_name = 'new_person.html'

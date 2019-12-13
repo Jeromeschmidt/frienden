@@ -5,9 +5,5 @@ from roommate_finder.models import Person
 class PersonSerializer(ModelSerializer):
     class Meta:
         model = Person
-        fields = '__all__'
 
-# class ChoiceSerializer(ModelSerializer):
-#     class Meta:
-#         model = Choice
-#         fields = '__all__'
+        fields = ('last_name', 'Bio', 'Have_room_available', 'min_rent', 'max_rent', 'pub_date')

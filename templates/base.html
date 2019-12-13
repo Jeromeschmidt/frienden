@@ -6,14 +6,16 @@
     <script src="https://kit.fontawesome.com/e7c15fdb77.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>frienden</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://bootswatch.com/4/minty/bootstrap.min.css'>
+    <title>Frienden</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand" href="{% url 'person-list-page' %}"><i class="fas fa-fw fa-book"></i> roommate_finder</a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+      <a class="navbar-brand" href="{% url 'person-list-page' %}"><i></i><h1>Frienden</h1></a>
       <form class="form-inline ml-auto">
         {% if user.is_authenticated %}
-            <div class="text-white">Hello, <strong>{{ user.first_name }}</strong>!</div>
+            <div class="text-white">Hello, <strong>{{ user.username }}</strong>!</div>
             <a href="{% url 'person-create-page' %}" class="btn btn-success ml-4">New Page</a>
             <a href="{% url 'logout' %}" class="btn btn-danger ml-2">Log Out</a>
         {% else %}

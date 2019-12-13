@@ -3,9 +3,11 @@
 {% block content %}
   <div class="row">
     <div class="col m-4">
-      <h3>{{ person.first_name }} <small class="text-muted">Last updated {{ person.modified|date:"SHORT_DATETIME_FORMAT" }} by <b>{{ person.author.username }}</b></small></h3>
+      <h3>{{ person.first_name }} <small class="text-muted">Last updated {{ person.modified|date:"SHORT_DATETIME_FORMAT" }} by <b>{{ person.first_name }}</b></small></h3>
       <hr>
-      <p>{{ person.bio|linebreaksbr }}</p>
+      <p>{{ person.Bio|linebreaksbr }}</p>
+      <p>Desired Rent Range: ${{ person.min_rent }} - ${{ person.max_rent }}</p>
+      <p>Contact Information: {{ person.contact_info }}</p>
       <hr>
       <a href="{% url 'person-list-page' %}">Back to List</a>
     </div>

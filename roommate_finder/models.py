@@ -21,6 +21,7 @@ class Person(models.Model):
     Have_room_available = models.CharField(max_length=1, choices=bool)
     min_rent = models.IntegerField()
     max_rent = models.IntegerField()
+    contact_info = models.CharField(max_length=100, default="")
     pub_date = models.DateTimeField('date published')
 
     def __str__(self):
