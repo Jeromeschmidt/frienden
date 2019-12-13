@@ -33,7 +33,7 @@ Congrats you should now have a working install of Make Resources
 
 If you have not yet followed the installation steps, go and do so before continuing.
 
-Once you have everything installed, you need to rename `.env.example` to `.env` and populate the fields with real data.
+Once you have everything installed, you need to create`.env` and populate the fields with real data.
 
 ```bash
 # cd into the src folder
@@ -42,7 +42,7 @@ cd frienden
 vim .env
 ```
 
-Once you have renamed the `.env` file and populate it with correct data, all you need to do is run the server!
+Once you have created the `.env` file and populate it with correct data, all you need to do is run the server!
 
 ```bash
 # run the the server
