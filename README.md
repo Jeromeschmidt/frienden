@@ -1,7 +1,6 @@
 # Frienden
 
 ## [Heroku Host](https://frienden.herokuapp.com/)
-#### ****DigitalOcean website doesn't function correctly all of the time, Heroku deployment serves as backup website
 
 ## 🚀 Getting Started
 
